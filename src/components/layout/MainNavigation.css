@@ -1,0 +1,209 @@
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #353234;
+  height: 5.5rem;
+  align-items: center;
+}
+a:hover {
+  color: #33bdf2;
+}
+.menu {
+  display: flex;
+  margin-left: 30px;
+}
+
+.separ {
+  margin-top: 2.7rem;
+  display: inline-block;
+}
+
+.navLink {
+  padding-right: 5rem;
+}
+
+.logo {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-left: -2.5rem;
+  color: #33bdf2;
+  margin-right: 15rem;
+}
+
+.shop {
+  display: inline-block;
+  position: relative;
+}
+
+.shop > a {
+  display: flex;
+  align-items: center;
+}
+
+.shop > a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  right: 0px;
+  transform: rotate(135deg);
+  align-self: center;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px 0px;
+  width: 85px;
+}
+
+.drop a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+  position: relative;
+}
+
+.drop a:hover,
+.dropTwo > a:hover,
+.more a:hover {
+  color: #000;
+  background-color: #33bdf2;
+}
+
+.drop .shirt > a {
+  display: flex;
+  align-items: center;
+}
+
+.drop .shirt > a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #313131;
+  border-right: 2px solid #313131;
+  position: absolute;
+  right: 5px;
+  transform: rotate(45deg);
+}
+
+.shop:hover .drop {
+  display: block;
+}
+
+/*-----------*/
+
+.shirt {
+  position: relative;
+}
+
+.dropTwo {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 100%;
+  width: 85px;
+  border-radius: 0px 5px 5px;
+  top: 0;
+}
+
+.shirt:hover .dropTwo {
+  display: block;
+}
+
+/* --------- Extra ------------ */
+
+.extra {
+  margin-right: 30px;
+}
+
+.translate {
+  display: inline-block;
+  position: relative;
+}
+
+.extra > a {
+  border: 2px solid #cbc;
+  border-radius: 20px;
+}
+
+.translate > a {
+  border-left: 1px solid #cbc;
+  line-height: 36px;
+}
+
+.more a {
+  color: #313131;
+}
+
+.more {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px;
+  right: 0;
+  width: 80px;
+}
+
+.more a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .menu {
+    display: flex;
+    margin-left: 5px;
+  }
+  .logo {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    margin-left: -2.5rem;
+    color: #33bdf2;
+    margin-right: 5rem;
+  }
+  .navLink {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .menu {
+    display: flex;
+    margin-left: 5px;
+  }
+  .logo {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 1.6rem;
+    margin-left: -2.5rem;
+    color: #33bdf2;
+    margin-right: 0;
+  }
+  .navLink {
+    padding-right: 0.5rem;
+  }
+}
